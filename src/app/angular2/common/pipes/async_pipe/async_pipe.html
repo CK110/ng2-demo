@@ -1,0 +1,18 @@
+<z-section [title]="'基本'" >
+  <z-demo>
+
+    <ul>
+      <li *ngFor="let item of items | async">{{item}}</li>
+    </ul>
+
+  </z-demo>
+
+  <z-markdown>
+
+    <markdown-to-html [src]="'app/angular2/common/pipes/async_pipe/async_pipe.md'"></markdown-to-html>
+
+  </z-markdown>
+
+
+</z-section>
+

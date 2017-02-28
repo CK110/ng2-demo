@@ -9,6 +9,9 @@ import {ZHeaderModule} from "./component/header/header";
 import {ZMenuModule} from "./component/menu/menu";
 
 import {ANGULAR2_DEMO_ARRAY} from "./angular2/index";
+import {SectionModule} from "./component/section/section";
+import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import {ANGULAR2_DEMO_ARRAY} from "./angular2/index";
     HttpModule,
     AppRoutingModule,
     ZHeaderModule,
-    ZMenuModule
+    ZMenuModule,
+    SectionModule,
+    MarkdownToHtmlModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

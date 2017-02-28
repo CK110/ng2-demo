@@ -23,7 +23,8 @@
         "../src/assets/css/grid.css",
         "../src/assets/css/site.css",
         "../src/assets/css/markdown.css",
-        "../src/assets/css/highlight.css"
+        "../src/assets/css/highlight.css",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [],
       "environments": {

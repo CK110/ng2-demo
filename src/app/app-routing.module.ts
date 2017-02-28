@@ -2,6 +2,7 @@ import {RouterModule, Router} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {AppComponent} from "./app.component";
 import {Angular2Component} from "./angular2/angular2";
+import {NG2AsyncPipe} from "./angular2/common/pipes/async_pipe/async_pipe";
 
 @NgModule({
   imports: [
@@ -15,12 +16,12 @@ import {Angular2Component} from "./angular2/angular2";
         children:[
           {
             path: '',
-            redirectTo: 'install',
+            redirectTo: 'asyncpipe',
             pathMatch: 'full'
           },
           {
-            path: 'install',
-            component: Angular2Component
+            path: 'asyncpipe',
+            component: NG2AsyncPipe
           }
         ]
       }
