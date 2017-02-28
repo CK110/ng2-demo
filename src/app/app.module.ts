@@ -11,6 +11,7 @@ import {ZMenuModule} from "./component/menu/menu";
 import {ANGULAR2_DEMO_ARRAY} from "./angular2/index";
 import {SectionModule} from "./component/section/section";
 import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
+import {MaterialModule} from "@angular/material";
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
     ZMenuModule,
     SectionModule,
     MarkdownToHtmlModule.forRoot(),
-
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

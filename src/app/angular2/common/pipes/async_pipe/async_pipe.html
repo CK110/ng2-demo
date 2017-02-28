@@ -2,7 +2,7 @@
   <z-demo>
 
     <ul>
-      <li *ngFor="let item of items | async">{{item}}</li>
+      <li *ngFor="let item of items1 | async">{{item}}</li>
     </ul>
 
   </z-demo>
@@ -10,6 +10,33 @@
   <z-markdown>
 
     <markdown-to-html [src]="'app/angular2/common/pipes/async_pipe/async_pipe.md'"></markdown-to-html>
+
+  </z-markdown>
+
+
+</z-section>
+
+
+
+<z-section [title]="'基本'" >
+  <z-demo>
+
+    <button md-button (click)="newSeq()">New random sequence</button>
+
+    <br>
+    <br>
+
+    <ul>
+      <li [style.background-color]="item.color"
+          *ngFor="let item of items2">{{item.num}}</li>
+    </ul>
+
+
+  </z-demo>
+
+  <z-markdown>
+
+    <!--<markdown-to-html [src]="'app/angular2/common/pipes/async_pipe/async_pipe.md'"></markdown-to-html>-->
 
   </z-markdown>
 
