@@ -1,0 +1,21 @@
+<div class="code-box">
+  <div class ="code-box-title" *ngIf="title">
+    <span>{{title}}</span>
+  </div>
+
+  <div class="code-box-demo">
+    <ng-content select="z-demo"></ng-content>
+  </div>
+
+  <div class="code-box-meta markdown" [style.display]="collapsed ? 'none' : 'block'">
+    <div style="padding: 10px 20px">
+      <ng-content select="z-markdown"></ng-content>
+    </div>
+  </div>
+
+  <div class="markdown-block-control" [ngClass]="{'markdown-block-hover':hoverToggler}" >
+    <a (mouseenter)="hoverToggler=true" (mouseleave)="hoverToggler=false" (click)="toggle($event)">
+      <span class="fa fa-fw" [ngClass]="{'fa-caret-up': !collapsed,'fa-caret-down':collapsed}"></span>
+    </a>
+  </div>
+</div>

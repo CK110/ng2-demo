@@ -1,0 +1,54 @@
+.header {
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    background: #fff;
+    height: 80px;
+    margin-bottom: 24px;
+    padding: 0 48px;
+}
+
+#logo {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+#logo img {
+    height: 80px;
+    line-height: 80px;
+    width: 40px;
+    margin-right: 8px;
+}
+
+img {
+    border-style: none;
+}
+
+#logo span {
+    float: right;
+    font-size: 16px;
+    font-family: 'Raleway', 'Hiragino Sans GB', sans-serif;
+    height: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.z-header-menu{
+
+}
+
+.z-header-menu-item{
+    height: 80px;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.z-header-menu-item a{
+    color: rgba(0, 0, 0, 0.65);
+}
+
+/*.z-header-menu-item-active a{*/
+    /*color: #108ee9*/
+
+/*}*/

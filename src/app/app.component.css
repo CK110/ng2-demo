@@ -1,0 +1,23 @@
+.page-wrapper {
+  background: #ECECEC;
+}
+
+.main-wrapper {
+  background: #fff;
+  margin: 0 48px 24px 48px;
+  border-radius: 4px;
+  padding: 24px 0 0;
+  position: relative;
+}
+
+.page-footer {
+  clear: both;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 1000px 0 1000px #fff;
+  height: 50px;
+  background-color: #fff;
+}
+

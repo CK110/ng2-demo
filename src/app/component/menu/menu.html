@@ -1,0 +1,31 @@
+<div>
+  <ul class="z-menu aside-container ">
+    <li *ngFor="let menu of menus" class="z-menu-item">
+      <!-- 一般链接 -->
+      <div *ngIf="menu.name != 'Components'" [ngClass]="{'z-menu-item-active':hoverToggler}" (mouseenter)="hoverToggler=true" (mouseleave)="hoverToggler=false">
+        <a [routerLink]="[menu.router]"> {{menu.name}} </a>
+      </div>
+
+      <!-- 组件链接 -->
+      <div class="z-menu-submenu-title" *ngIf="menu.name == 'Components'">
+        <h4>Components</h4>
+      </div>
+      <ul class="z-menu ant-menu-inline z-menu-sub" *ngIf="menu.name == 'Components'">
+        <li *ngFor="let component of menu.components" class="z-menu-item-group">
+          <div class="z-menu-item-group-title">{{component.group}}</div>
+          <ul class="z-menu-item-group-list">
+            <li class="z-menu-item" *ngFor="let child of component.children">
+              <div [ngClass]="{'z-menu-item-active':hoverToggler}" (mouseenter)="hoverToggler=true" (mouseleave)="hoverToggler=false">
+                <a [routerLink]="[child.router]"  >
+                  <span>{{child.us_name}}</span>
+                  <span>{{child.zh_name}}</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+</div>

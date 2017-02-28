@@ -4,15 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {ZHeaderModule} from "./component/header/header";
+import {ZMenuModule} from "./component/menu/menu";
+
+import {ANGULAR2_DEMO_ARRAY} from "./angular2/index";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ANGULAR2_DEMO_ARRAY
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    ZHeaderModule,
+    ZMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

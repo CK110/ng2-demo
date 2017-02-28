@@ -1,0 +1,106 @@
+.z-menu {
+  outline: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.65);
+  background: #fff;
+  line-height: 46px;
+  z-index: auto;
+}
+
+.aside-container {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+
+.z-menu-item{
+  padding-left: 24px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.z-menu-item a{
+  display: block;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/*.z-menu-item a:hover{*/
+  /*color: #108ee9;*/
+/*}*/
+
+
+/*.z-menu-item-active{*/
+  /*color: #108ee9;*/
+/*}*/
+
+.z-menu-item-selected {
+}
+
+
+.z-menu-submenu-title{
+  font-size: 12px;
+  line-height: 42px;
+  height: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+
+.z-menu-submenu-title h4{
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.z-menu-sub.z-menu-inline {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.z-menu-submenu > .z-menu {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.z-menu-item-group-title{
+  color: rgba(0, 0, 0, 0.43);
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+.z-menu-sub.z-menu-inline .z-menu-item-group-title {
+  padding-left: 32px;
+}
+
+.z-menu-item-group-list{
+  margin: 0;
+  padding: 0;
+}
+
+.ant-menu-item, .ant-menu-submenu, .ant-menu-submenu-title {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.z-menu-item-group-list > .z-menu-item{
+  padding: 0 16px 0 28px;
+  font-size: 12px;
+  line-height: 42px;
+  height: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.z-menu-item > a {
+  display: block;
+  color: rgba(0, 0, 0, 0.65);
+}

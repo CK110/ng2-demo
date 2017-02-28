@@ -19,7 +19,9 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../src/assets/css/grid.css",
+        "../src/assets/css/site.css"
       ],
       "scripts": [],
       "environments": {
