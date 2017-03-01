@@ -13,7 +13,7 @@ export class RxjsComponent implements OnInit {
   ngOnInit() {
     this.menus=[
       {
-        "name": 'chat demo',
+        "name": '聊天应用 demo',
         "router": '/rxjs/chatdemo'
       },
 
