@@ -12,12 +12,17 @@ import {ANGULAR2_DEMO_ARRAY} from "./angular2/index";
 import {SectionModule} from "./component/section/section";
 import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
 import {MaterialModule} from "@angular/material";
+import {RXJS_DEMO_ARRAY} from "./rxjs/index";
 
+let All_Declarations =[
+  ANGULAR2_DEMO_ARRAY,
+  RXJS_DEMO_ARRAY
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    ANGULAR2_DEMO_ARRAY
+    All_Declarations
   ],
   imports: [
     BrowserModule,

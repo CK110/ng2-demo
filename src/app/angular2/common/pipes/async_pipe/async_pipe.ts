@@ -28,8 +28,8 @@ export class NG2AsyncPipe implements OnInit {
     // generate a random color
     let color = '#' + Math.random().toString(16).slice(-6);
 
-    console.log(Math.random().toString(16));
-    console.log(Math.random().toString(16).slice(-6));
+    // console.log(Math.random().toString(16));
+    // console.log(Math.random().toString(16).slice(-6));
 
     Observable.interval(1000)
       .scan((acc, num)=>[{num, color }, ...acc].slice(0, 5), [])

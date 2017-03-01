@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from "./app.component";
 import {Angular2Component} from "./angular2/angular2";
 import {NG2AsyncPipe} from "./angular2/common/pipes/async_pipe/async_pipe";
+import {RxjsComponent} from "./rxjs/rxjs";
 
 @NgModule({
   imports: [
@@ -22,6 +23,20 @@ import {NG2AsyncPipe} from "./angular2/common/pipes/async_pipe/async_pipe";
           {
             path: 'asyncpipe',
             component: NG2AsyncPipe
+          }
+        ]
+      },
+      { path: 'rxjs',
+        component: RxjsComponent,
+        children:[
+          {
+            path: '',
+            redirectTo: 'chatdemo',
+            pathMatch: 'full'
+          },
+          {
+            path: 'chatdemo',
+            loadChildren:'app/rxjs/chat/chat#ChatDemoModule'
           }
         ]
       }
