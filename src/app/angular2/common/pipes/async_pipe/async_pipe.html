@@ -9,37 +9,62 @@
 
   <z-markdown>
 
-    <markdown-to-html [src]="'app/angular2/common/pipes/async_pipe/async_pipe.md'"></markdown-to-html>
+    <markdown-to-html >
+      asyncPipe
 
+      ---
+
+      ```typescript
+      Observable.interval(1000)
+      .scan((acc, cur)=>[cur, ...acc].slice(0, 5), []);
+
+      ```
+
+      ```html
+
+      <ul>
+        <li *ngFor="let item of items | async">{{item}}</li>
+      </ul>
+
+      ```
+
+      如果不加 async:
+      <br>
+      ![错误](https://ww2.sinaimg.cn/large/006tKfTcgy1fd69lnj75qj31kw0ao7gc.jpg)
+
+      ---
+    </markdown-to-html>
   </z-markdown>
-
-
 </z-section>
 
 
 
 <z-section [title]="'基本'" >
   <z-demo>
-
     <button md-button (click)="newSeq()">New random sequence</button>
-
     <br>
     <br>
-
     <ul>
       <li [style.background-color]="item.color"
           *ngFor="let item of items2">{{item.num}}</li>
     </ul>
-
-
   </z-demo>
 
   <z-markdown>
-
-    <!--<markdown-to-html [src]="'app/angular2/common/pipes/async_pipe/async_pipe.md'"></markdown-to-html>-->
-
   </z-markdown>
-
-
 </z-section>
+
+
+
+<z-section [title]="'测试http使用Observable'" >
+  <z-demo>
+    <ul>
+      <li *ngFor="let item of items3 | async">{{item.title}}</li>
+    </ul>
+  </z-demo>
+
+  <z-markdown>
+  </z-markdown>
+</z-section>
+
 

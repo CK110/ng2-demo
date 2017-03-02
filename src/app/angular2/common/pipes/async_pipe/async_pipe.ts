@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/operator/scan';
+import {Http, Response} from "@angular/http";
 
 @Component({
     selector: 'ng2-async-pipe',
@@ -14,12 +15,22 @@ export class NG2AsyncPipe implements OnInit {
 
   items2 = [];
 
+  items3:Observable<any>;
 
-  constructor() {
+  constructor(private http:Http) {
     this.newSeq()
   }
 
   ngOnInit() {
+    this.items3= this.http.get('http://swapi.co/api/films')
+      .map((response: Response) => response.json().results)
+      .do(data => console.log(JSON.stringify(data)))
+
+    // CORS
+    // this.items3 = this.http.get('http://localhost:8022/async.json')
+    //   .map((response: Response) => response.json().results)
+    //   .do(data => console.log(JSON.stringify(data)))
+
   }
 
 
@@ -37,8 +48,6 @@ export class NG2AsyncPipe implements OnInit {
   }
 
 
-  test(){
 
-  }
 
 }
