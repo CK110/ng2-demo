@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.ui-host {
+  display:inline-block;
+  min-width:240px;
+}
+
+
+my-comp{
+  width: 300px
+}

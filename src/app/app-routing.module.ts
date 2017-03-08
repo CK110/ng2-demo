@@ -4,6 +4,7 @@ import {AppComponent} from "./app.component";
 import {Angular2Component} from "./angular2/angular2";
 import {NG2AsyncPipe} from "./angular2/common/pipes/async_pipe/async_pipe";
 import {RxjsComponent} from "./rxjs/rxjs";
+import {SetHostStyleComponent} from "./angular2/core/style/sethoststyle/sethoststyle";
 
 @NgModule({
   imports: [
@@ -23,7 +24,11 @@ import {RxjsComponent} from "./rxjs/rxjs";
           {
             path: 'asyncpipe',
             component: NG2AsyncPipe
-          }
+          },
+          {
+            path: 'hoststyle',
+            component: SetHostStyleComponent
+          },
         ]
       },
       { path: 'rxjs',

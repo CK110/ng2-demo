@@ -30,6 +30,11 @@ export class Angular2Component implements OnInit {
                 us_name:'asyncpipe',
                 zh_name: '',
                 router: '/angular2/asyncpipe'
+              },
+              {
+                us_name:'hoststyle',
+                zh_name: '设置host element style',
+                router: '/angular2/hoststyle'
               }
             ]
           },
